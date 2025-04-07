@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { ComponentProps } from "react";
-import { ThemeSwitcher } from "@/components/themeSwitcher/themeSwitcher.tsx";
-import RecommendationBadge from "@/components/RecommendationBadge/RecommendationBadge.tsx";
+import { RecommendationBadge } from "@/components/RecommendationBadge";
+import { ThemeSwitcher } from "@/components/themeSwitcher";
 
 export function Playground({ className, ...props }: ComponentProps<"div">) {
   return (

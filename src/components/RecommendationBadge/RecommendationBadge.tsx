@@ -13,7 +13,7 @@ type RecommendationBadgeProps = {
   recommendation: Recommendation;
 };
 
-const RecommendationBadge: FC<RecommendationBadgeProps> = ({
+export const RecommendationBadge: FC<RecommendationBadgeProps> = ({
   recommendation,
 }) => {
   const classes = useMemo(() => {
@@ -43,5 +43,3 @@ const RecommendationBadge: FC<RecommendationBadgeProps> = ({
     </Badge>
   );
 };
-
-export default RecommendationBadge;
