@@ -1,10 +1,21 @@
-import { ThemeProvider } from "@/components/themeProvider";
-import { Playground } from "@/components/playground/playground.tsx";
+import { RecommendationBadge } from "@/components/RecommendationBadge";
+import { PlaygroundLayout } from "@/layouts/PlaygroundLayout";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 function App() {
   return (
     <ThemeProvider>
-      <Playground />
+      <PlaygroundLayout
+        title="Recommendation Badge Component"
+        description="Recommendation Badge Component"
+      >
+        <RecommendationBadge recommendation="buy" />
+        <RecommendationBadge recommendation="outperform" />
+        <RecommendationBadge recommendation="hold" />
+        <RecommendationBadge recommendation="average" />
+        <RecommendationBadge recommendation="underperform" />
+        <RecommendationBadge recommendation="sell" />
+      </PlaygroundLayout>
     </ThemeProvider>
   );
 }
