@@ -1,7 +1,10 @@
 module.exports = {
-  plugins: [
-    require("postcss-preset-env")({
+  plugins: {
+    "postcss-preset-env": {
       stage: 1,
-    }),
-  ],
+      features: {
+        "cascade-layers": true,
+      },
+    },
+  },
 };
